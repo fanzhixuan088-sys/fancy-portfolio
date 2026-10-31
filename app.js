@@ -1,7 +1,7 @@
 import * as T from './vendor/three.module.js';
 import * as A from './art.js';
 import {renderContact} from './contact-ui.js';
-import {projects,projectForIndex} from './projects/manifest.js';
+import {projects,projectForIndex} from './projects-manifest.js';
 import {aboutPanels,slogan} from './about-content.js';
 import {pencilMaterial,addGinkgo,animateLeaves,createPaperPlane,animateAbout,buildStudio,addPlanterGarden} from './space-details.js';
 const $=s=>document.querySelector(s),V=(x=0,y=0,z=0)=>new T.Vector3(x,y,z);

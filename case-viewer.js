@@ -1,4 +1,4 @@
-import {projects} from './projects/manifest.js';
+import {projects} from './projects-manifest.js';
 const $=id=>document.getElementById(id),params=new URLSearchParams(location.search),embedded=params.get('embedded')==='1'&&window.parent!==window,project=projects.find(p=>p.id===params.get('project'));
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;let active=1,scale=1,zoomPage=null,drag=null,scrollQueued=false;
 function notify(type,detail={}){if(embedded)window.parent.postMessage({type,...detail},location.origin);}
